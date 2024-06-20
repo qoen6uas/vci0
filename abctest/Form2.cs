@@ -21,8 +21,8 @@ namespace abctest
     {
         IFirebaseConfig config = new FirebaseConfig
         {
-            AuthSecret = "0zEMJT0ibw3Adjj8O6ox9GpUrUZByncftWDyu9Wa",
-            BasePath = "https://fir-kangtaehun-default-rtdb.firebaseio.com/"
+            AuthSecret = "",
+            BasePath = ""
         };
 
         List<PRO> Pro = new List<PRO>();
