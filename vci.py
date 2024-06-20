@@ -9,9 +9,9 @@ from twilio.rest import Client
 from flask import Flask, Response, request
 
 # Firebase 서비스 계정 키 파일 경로
-cred = credentials.Certificate(r"C:\Users\tkddu\Downloads\fir-kangtaehun-firebase-adminsdk-wgc1p-f40ffb8fc5.json")
+cred = credentials.Certificate(r"yourfile.json")
 firebase_admin.initialize_app(cred, {
-    'databaseURL': 'https://fir-kangtaehun-default-rtdb.firebaseio.com'
+    'databaseURL': 'YOUR URL'
 })
 
 model = YOLO('yolov8n.pt')
@@ -21,8 +21,8 @@ cap = cv2.VideoCapture(0)
 msgck = 0
 
 # Twilio 설정
-account_sid = 'AC46d7cb1643794afa50deb989658fda07'
-auth_token = '8f56a730dca5daef0590221434a786ec'
+account_sid = 'account_sid'
+auth_token = 'your auth_token'
 client = Client(account_sid, auth_token)
 app = Flask(__name__)
 
